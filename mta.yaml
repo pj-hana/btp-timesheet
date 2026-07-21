@@ -1,0 +1,164 @@
+_schema-version: "3.3"
+ID: timesheet
+description: Timesheet CAP project.
+version: 1.0.0
+
+modules:
+  # CAP service
+  - name: timesheet-srv
+    type: nodejs
+    path: gen/srv
+    parameters:
+      buildpack: nodejs_buildpack
+      instances: 1
+    build-parameters:
+      builder: npm-ci
+    requires:
+      - name: timesheet-auth
+      - name: timesheet-db
+    provides:
+      - name: srv-api
+        properties:
+          srv-url: ${default-url}
+
+  # HANA database deployer
+  - name: timesheet-db-deployer
+    type: hdb
+    path: gen/db
+    parameters:
+      buildpack: nodejs_buildpack
+    requires:
+      - name: timesheet-db
+
+  # Standalone application router
+  - name: timesheet
+    type: approuter.nodejs
+    path: app/router
+    parameters:
+      disk-quota: 256M
+      memory: 256M
+      keep-existing-routes: true
+    requires:
+      - name: srv-api
+        group: destinations
+        properties:
+          name: srv-api
+          url: ~{srv-url}
+          forwardAuthToken: true
+
+      - name: timesheet-auth
+
+      - name: timesheet-destination-service
+        group: destinations
+        properties:
+          name: ui5
+          url: https://ui5.sap.com
+          forwardAuthToken: false
+
+      - name: timesheet-html5-runtime
+
+    provides:
+      - name: app-api
+        properties:
+          app-protocol: ${protocol}
+          app-uri: ${default-uri}
+
+  # UI5 application
+  - name: comorigintimesheetui
+    type: html5
+    path: app/timesheet-ui
+    build-parameters:
+      builder: custom
+      commands:
+        - npm ci
+        - npm run build:cf
+      build-result: dist
+      supported-platforms: []
+
+  # Uploads UI5 application to the HTML5 repository
+  - name: timesheet-app-content
+    type: com.sap.application.content
+    path: .
+    requires:
+      - name: timesheet-html5-repo-host
+        parameters:
+          content-target: true
+    build-parameters:
+      build-result: resources
+      requires:
+        - name: comorigintimesheetui
+          artifacts:
+            - comorigintimesheetui.zip
+          target-path: resources/
+
+resources:
+  # HTML5 application repository: stores the UI5 application
+  - name: timesheet-html5-repo-host
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-host
+
+  # HTML5 application repository: allows approuter to access UI content
+  - name: timesheet-html5-runtime
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: html5-apps-repo
+      service-plan: app-runtime
+
+  # XSUAA authentication
+  - name: timesheet-auth
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      path: ./xs-security.json
+      config:
+        xsappname: timesheet-${space}
+        tenant-mode: dedicated
+        oauth2-configuration:
+          credential-types:
+            - binding-secret
+            - x509
+          redirect-uris:
+            - https://*~{app-api/app-uri}/**
+    requires:
+      - name: app-api
+
+  # HANA HDI container
+  - name: timesheet-db
+    type: com.sap.xs.hdi-container
+    parameters:
+      service: hana
+      service-plan: hdi-shared
+
+  # Destination service
+  - name: timesheet-destination-service
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: destination
+      service-name: timesheet-destination-service
+      service-plan: lite
+      config:
+        HTML5Runtime_enabled: false
+        init_data:
+          instance:
+            destinations:
+              - Name: ui5
+                Type: HTTP
+                ProxyType: Internet
+                Authentication: NoAuthentication
+                URL: https://ui5.sap.com
+            existing_destinations_policy: update
+        version: 1.0.0
+
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true
+
+build-parameters:
+  before-all:
+    - builder: custom
+      commands:
+        - npm ci
+        - npx cds build --production
