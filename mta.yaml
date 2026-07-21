@@ -2,80 +2,70 @@ _schema-version: "3.3"
 ID: timesheet
 description: Timesheet CAP project.
 version: 1.0.0
-
 modules:
-  # CAP service
   - name: timesheet-srv
     type: nodejs
     path: gen/srv
+    requires:
+      - name: timesheet-auth
+      - name: timesheet-db
+      - name: timesheet-destination-service
+    provides:
+      - name: srv-api
+        properties:
+          srv-url: ${default-url}
     parameters:
       buildpack: nodejs_buildpack
       instances: 1
     build-parameters:
       builder: npm-ci
-    requires:
-      - name: timesheet-auth
-      - name: timesheet-db
-    provides:
-      - name: srv-api
-        properties:
-          srv-url: ${default-url}
-
-  # HANA database deployer
   - name: timesheet-db-deployer
     type: hdb
     path: gen/db
-    parameters:
-      buildpack: nodejs_buildpack
     requires:
       - name: timesheet-db
-
-  # Standalone application router
+    parameters:
+      buildpack: nodejs_buildpack
   - name: timesheet
     type: approuter.nodejs
     path: app/router
-    parameters:
-      disk-quota: 256M
-      memory: 256M
-      keep-existing-routes: true
     requires:
       - name: srv-api
         group: destinations
         properties:
+          forwardAuthToken: true
           name: srv-api
           url: ~{srv-url}
-          forwardAuthToken: true
-
       - name: timesheet-auth
-
       - name: timesheet-destination-service
         group: destinations
         properties:
+          forwardAuthToken: false
           name: ui5
           url: https://ui5.sap.com
-          forwardAuthToken: false
-
       - name: timesheet-html5-runtime
-
     provides:
       - name: app-api
         properties:
           app-protocol: ${protocol}
           app-uri: ${default-uri}
-
-  # UI5 application
+    parameters:
+      disk-quota: 256M
+      keep-existing-routes: true
+      memory: 256M
   - name: comorigintimesheetui
     type: html5
     path: app/timesheet-ui
     build-parameters:
+      build-result: dist
       builder: custom
       commands:
-        - npm ci
+        - npm install
         - npm run build:cf
-      build-result: dist
-      supported-platforms: []
-
-  # Uploads UI5 application to the HTML5 repository
+        - npm ci
+        - npm run build
+      supported-platforms:
+        []
   - name: timesheet-app-content
     type: com.sap.application.content
     path: .
@@ -86,76 +76,99 @@ modules:
     build-parameters:
       build-result: resources
       requires:
-        - name: comorigintimesheetui
-          artifacts:
+        - artifacts:
             - comorigintimesheetui.zip
+          name: comorigintimesheetui
           target-path: resources/
 
+ 
+  - name: timesheet-destinations
+    type: com.sap.application.content
+    requires:
+      - name: timesheet-auth
+        parameters:
+          service-key:
+            name: timesheet-auth-key
+      - name: timesheet-html5-repo-host
+        parameters:
+          service-key:
+            name: timesheet-html5-repo-host-key
+      - name: srv-api
+      - name: timesheet-destination-service
+        parameters:
+          content-target: true
+    build-parameters:
+      no-source: true
+    parameters:
+      content:
+        instance:
+          existing_destinations_policy: update
+          destinations:
+            - Name: timesheet-html5-repository
+              ServiceInstanceName: timesheet-html5-repo-host
+              ServiceKeyName: timesheet-html5-repo-host-key
+              sap.cloud.service: timesheet.service
+            - Name: timesheet-auth
+              Authentication: OAuth2UserTokenExchange
+              ServiceInstanceName: timesheet-auth
+              ServiceKeyName: timesheet-auth-key
+              sap.cloud.service: timesheet.service
 resources:
-  # HTML5 application repository: stores the UI5 application
   - name: timesheet-html5-repo-host
     type: org.cloudfoundry.managed-service
     parameters:
       service: html5-apps-repo
       service-plan: app-host
-
-  # HTML5 application repository: allows approuter to access UI content
   - name: timesheet-html5-runtime
     type: org.cloudfoundry.managed-service
     parameters:
       service: html5-apps-repo
       service-plan: app-runtime
-
-  # XSUAA authentication
   - name: timesheet-auth
     type: org.cloudfoundry.managed-service
     parameters:
-      service: xsuaa
-      service-plan: application
-      path: ./xs-security.json
       config:
-        xsappname: timesheet-${space}
-        tenant-mode: dedicated
         oauth2-configuration:
           credential-types:
             - binding-secret
             - x509
           redirect-uris:
             - https://*~{app-api/app-uri}/**
+        tenant-mode: dedicated
+        xsappname: timesheet-${space}
+      path: ./xs-security.json
+      service: xsuaa
+      service-plan: application
     requires:
       - name: app-api
-
-  # HANA HDI container
   - name: timesheet-db
     type: com.sap.xs.hdi-container
     parameters:
       service: hana
       service-plan: hdi-shared
-
-  # Destination service
   - name: timesheet-destination-service
     type: org.cloudfoundry.managed-service
     parameters:
-      service: destination
-      service-name: timesheet-destination-service
-      service-plan: lite
       config:
-        HTML5Runtime_enabled: false
+        HTML5Runtime_enabled: true
         init_data:
           instance:
             destinations:
-              - Name: ui5
-                Type: HTTP
+              - Authentication: NoAuthentication
+                Name: ui5
                 ProxyType: Internet
-                Authentication: NoAuthentication
+                Type: HTTP
                 URL: https://ui5.sap.com
             existing_destinations_policy: update
         version: 1.0.0
-
+      service: destination
+      service-name: timesheet-destination-service
+      service-plan: lite
+    requires:
+      - name: srv-api
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true
-
 build-parameters:
   before-all:
     - builder: custom

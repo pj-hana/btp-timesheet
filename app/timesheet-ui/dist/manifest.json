@@ -10,7 +10,7 @@
 			]
 		},
 		"applicationVersion": {
-			"version": "0.0.1"
+			"version": "0.0.2"
 		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
@@ -27,6 +27,20 @@
 				"settings": {
 					"annotations": [],
 					"odataVersion": "4.0"
+				}
+			}
+		},
+		"crossNavigation": {
+			"inbounds": {
+				"Timesheet-display": {
+					"semanticObject": "Timesheet",
+					"action": "display",
+					"title": "{{Timesheet-display.flpTitle}}",
+					"subTitle": "{{Timesheet-display.flpSubtitle}}",
+					"signature": {
+						"parameters": {},
+						"additionalParameters": "allowed"
+					}
 				}
 			}
 		}
@@ -123,5 +137,9 @@
 			"async": true
 		},
 		"flexBundle": false
+	},
+	"sap.cloud": {
+		"public": true,
+		"service": "timesheet.service"
 	}
 }

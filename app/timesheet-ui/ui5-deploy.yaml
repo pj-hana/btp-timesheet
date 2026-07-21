@@ -2,7 +2,7 @@
 
 specVersion: "4.0"
 metadata:
-  name: com.origin.timesheet.timesheetui
+  name: com.origin.timesheet.ui
 type: application
 builder:
   resources:

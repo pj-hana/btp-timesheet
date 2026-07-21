@@ -1,6 +1,22 @@
 {
-  "scopes": [],
   "attributes": [],
-  "role-templates": [],
-  "authorities-inheritance": false
+  "authorities-inheritance": false,
+  "xsappname": "timesheet",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.ts_update",
+      "description": "Update timesheets"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "OR_TIMESHEET_USER_RC",
+      "description": "Timesheet User Backend Role",
+      "scope-references": [
+        "$XSAPPNAME.ts_update"
+      ]
+    }
+  ]
+
 }

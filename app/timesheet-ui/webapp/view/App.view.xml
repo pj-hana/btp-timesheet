@@ -2,6 +2,26 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        
+         <content>
+            <Table items="{/Timesheets}">
+                <columns>
+                    <Column>
+                        <Text text="ID"/>
+                    </Column>
+                    <Column>
+                        <Text text="Period"/>
+                    </Column>
+                </columns>
+
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{ID}"/>
+                            <Text text="{period}"/>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
     </Page>
 </mvc:View>
