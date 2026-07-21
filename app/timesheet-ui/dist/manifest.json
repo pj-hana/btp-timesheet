@@ -78,7 +78,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleUrl": "i18n/i18n.properties",
+					"bundleName": "com.origin.timesheet.ui.i18n.i18n",
 					"supportedLocales": [
 						""
 					],
