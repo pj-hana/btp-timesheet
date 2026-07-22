@@ -20,3 +20,30 @@ File or Folder | Purpose
 ## Learn More
 
 Learn more at <https://cap.cloud.sap>.
+
+## on local test change. for deploy rollback all the changes.  
+ "xsappname" to  "timesheet-DEV" in xs-security.json, 
+add   "oauth2-configuration": {
+    "redirect-uris": [
+       "https://*.applicationstudio.cloud.sap/**"
+    ]
+  }, to xs-security.json
+in app/roouter/xs-app.json change to this
+  {
+  "welcomeFile": "/index.html",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "^/odata/(.*)$",
+      "target": "/odata/$1",
+      "destination": "local-cap",
+      "authenticationType": "xsuaa",
+      "csrfProtection": false
+    },
+    {
+      "source": "^/(.*)$",
+      "localDir": "../timesheet-ui/webapp",
+      "authenticationType": "xsuaa"
+    }
+  ]
+}
