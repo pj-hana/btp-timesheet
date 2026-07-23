@@ -16,11 +16,13 @@ comorigintimesheetui.zip
 mta_archives/
 *_mta_build_tmp
 *.mtar
-
+.mcp.json
 # Other
 .DS_Store
 *.orig
 *.log
+
+**/package-lock.json
 
 # @cap-js/cds-typer
 @cds-models
