@@ -1,0 +1,3439 @@
+{
+    "@odata.context": "$metadata#com.origin.wfs.WFSService.PeriodDataListByEmpId",
+    "periodMetaData": {
+        "fieldLabels": [],
+        "payCodes": []
+    },
+    "periods": [
+        {
+            "managerApproval": "",
+            "periodId": {
+                "assignmentInfo": {
+                    "assignmentDescription": "Senior Advisor - Environment",
+                    "assignmentId": 47793144383
+                },
+                "payPeriodBeginDate": "2026-07-13",
+                "payPeriodEndDate": "2026-07-26"
+            },
+            "scheduleDetailRow": [
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-13T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-13T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-13T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-13T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-14T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-14T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-14T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-14T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-15T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-15T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-15T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-15T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-16T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-16T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-16T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-16T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-17T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-17T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-17T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-17T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-18"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-19"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-20T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-20T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-20T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-20T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-21T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-21T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-21T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-21T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-22T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-22T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-22T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-22T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-23T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-23T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-23T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-23T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-24T17:06:00Z",
+                    "hours": 8,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE",
+                    "startDateTime": "2026-07-24T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "Created through Policy Creation API at 2023-03-07 10:31:55",
+                    "endDateTime": "2026-07-24T12:30:00Z",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-24T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-25"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "payCode": "SCHEDULE_METADATA",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                }
+            ],
+            "submittedByEmployee": false,
+            "timeSheetDetailRow": [
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.135249,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 69827.206,
+                    "comments": "",
+                    "hours": 69.827206,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_AO_LSL_AP_ROP",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-13T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-13T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-13T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-13T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-13T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-13T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-13T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-13T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-13T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-13T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-13T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-13T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-13"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-14T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-14T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-14T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-14T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-14T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-14T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-14T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-14T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-14T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-14T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-14T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-14T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-14"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-15T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-15T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-15T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-15T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-15T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-15T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-15T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-15T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-15T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-15T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-15T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-15T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-15"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-16T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-16T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-16T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-16T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-16T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-16T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-16T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-16T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-16T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-16T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-16T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-16T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-16"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.00356,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-17T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-17T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-17T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-17T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-17T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-17T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-17T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-17T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-17T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-17T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-17T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-17T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-17"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-18"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-18"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-18"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "OFF_SHIFT",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-18"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-18T00:00:00Z",
+                    "hours": 0,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-18T00:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-18"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-19"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.135249,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-19"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-19"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "OFF_SHIFT",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-19"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-19T00:00:00Z",
+                    "hours": 0,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-19T00:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-19"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-20T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-20T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-20T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-20T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-20T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-20T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-20T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-20T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-20T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-20T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-20T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-20T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-20"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-21T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-21T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-21T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-21T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-21T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-21T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-21T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-21T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-21T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-21T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-21T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-21T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-21"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.00356,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-22T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-22T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-22T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-22T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-22T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-22T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-22T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-22T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-22T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-22T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-22T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-22T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-22"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-23T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-23T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-23T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-23T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-23T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-23T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-23T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-23T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-23T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-23T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-23T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-23T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-23"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 7.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-24T12:00:00Z",
+                    "hours": 3,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-24T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-24T17:06:00Z",
+                    "hours": 8.1,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-24T09:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-24T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "MEAL_BREAK_LTTS",
+                    "startDateTime": "2026-07-24T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-24T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "REPLACE_ME",
+                    "startDateTime": "2026-07-24T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-24T12:30:00Z",
+                    "hours": 0.5,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_MEAL_BREAK",
+                    "startDateTime": "2026-07-24T12:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-24T17:06:00Z",
+                    "hours": 4.6,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SAL_IO",
+                    "startDateTime": "2026-07-24T12:30:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-24"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-25"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-25"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.135249,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-25"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "OFF_SHIFT",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-25"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-25T00:00:00Z",
+                    "hours": 0,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-25T00:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-25"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.003559,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0.13525,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_ADJ_H",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 38,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_LSL_AVG_WEEKLY_HOURS",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 157836.55,
+                    "comments": "",
+                    "hours": 157.83655,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "PYEXEMA_LSL",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 0,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "OFF_SHIFT",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 69827.2,
+                    "comments": "",
+                    "hours": 0,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "LP_AO_LSL_AP_ROP2ECP",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 109.8692,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "PYEXPPE_ANNUAL_LEAVE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 111957.2,
+                    "comments": "",
+                    "hours": 111.9572,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "PYEXEME_ANNUAL_LEAVE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 155.2668,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "PYEXPPA_LSL",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "hours": 111.3677,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "PYEXPPE_PERSONAL_LEAVE",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                },
+                {
+                    "amount": 0,
+                    "comments": "",
+                    "endDateTime": "2026-07-26T00:00:00Z",
+                    "hours": 0,
+                    "inSwipeLatitude": null,
+                    "inSwipeLongitude": null,
+                    "ld": [
+                        "",
+                        "",
+                        ""
+                    ],
+                    "outSwipeLatitude": null,
+                    "outSwipeLongitude": null,
+                    "payCode": "SCHEDULE_LTTS",
+                    "startDateTime": "2026-07-26T00:00:00Z",
+                    "unit": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "workDate": "2026-07-26"
+                }
+            ],
+            "timeSheetException": []
+        }
+    ]
+}

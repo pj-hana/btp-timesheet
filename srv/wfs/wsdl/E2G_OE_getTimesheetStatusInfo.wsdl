@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://services.workforcesoftware.com/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ax2283="http://ws.apache.org/axis2/xsd" xmlns:ax2284="http://data.service.webservices.workforcesoftware.com/xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ax2287="http://webservices.workforcesoftware.com/xsd" xmlns:tns="http://services.workforcesoftware.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://services.workforcesoftware.com">
+    <wsdl:documentation>E2G_OE_getTimesheetStatusInfo</wsdl:documentation>
+    <wsdl:types>
+        <xs:schema xmlns:ax2285="http://data.service.webservices.workforcesoftware.com/xsd" xmlns:ax2288="http://webservices.workforcesoftware.com/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.apache.org/axis2/xsd">
+            <xs:import namespace="http://data.service.webservices.workforcesoftware.com/xsd"/>
+            <xs:import namespace="http://webservices.workforcesoftware.com/xsd"/>
+            <xs:complexType name="E2g_oe_get_timesheet_status_info_request">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="asOfDate" nillable="true" type="ax2284:WSDate"/>
+                    <xs:element minOccurs="0" name="employeeId" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="E2G_OE_getTimesheetStatusInfoResult">
+                <xs:complexContent>
+                    <xs:extension base="ax2287:WSResultObjectBase">
+                        <xs:sequence>
+                            <xs:element minOccurs="0" name="result" nillable="true" type="ax2283:E2g_oe_timesheet_status_info"/>
+                        </xs:sequence>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+            <xs:complexType name="E2g_oe_timesheet_status_info">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="approvalLevel" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="asOfDate" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="assignmentId" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="currentState" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="isAmendment" nillable="true" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="isEmployeeApproved" nillable="true" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="mgrApprovalLevel" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="payPeriodEndDate" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="payPeriodStartDate" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="policyProfile" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://data.service.webservices.workforcesoftware.com/xsd">
+            <xs:complexType name="WSDate">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="day" type="xs:int"/>
+                    <xs:element minOccurs="0" name="month" type="xs:int"/>
+                    <xs:element minOccurs="0" name="year" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservices.workforcesoftware.com/xsd">
+            <xs:complexType name="WSResultObjectBase">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="detailedErrorMessage" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="operationSuccessful" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="resultCode" type="xs:int"/>
+                    <xs:element minOccurs="0" name="resultDescription" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ax2286="http://ws.apache.org/axis2/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.workforcesoftware.com/xsd">
+            <xs:import namespace="http://ws.apache.org/axis2/xsd"/>
+            <xs:element name="E2G_OE_getTimesheetStatusInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="request" nillable="true" type="ax2283:E2g_oe_get_timesheet_status_info_request"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="E2G_OE_getTimesheetStatusInfoResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax2283:E2G_OE_getTimesheetStatusInfoResult"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="E2G_OE_getTimesheetStatusInfoRequest">
+        <wsdl:part name="parameters" element="ns:E2G_OE_getTimesheetStatusInfo"/>
+    </wsdl:message>
+    <wsdl:message name="E2G_OE_getTimesheetStatusInfoResponse">
+        <wsdl:part name="parameters" element="ns:E2G_OE_getTimesheetStatusInfoResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="E2G_OE_getTimesheetStatusInfoPortType">
+        <wsdl:operation name="E2G_OE_getTimesheetStatusInfo">
+            <wsdl:input message="tns:E2G_OE_getTimesheetStatusInfoRequest" wsaw:Action="urn:E2G_OE_getTimesheetStatusInfo"/>
+            <wsdl:output message="tns:E2G_OE_getTimesheetStatusInfoResponse" wsaw:Action="urn:E2G_OE_getTimesheetStatusInfoResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="E2G_OE_getTimesheetStatusInfoSoap11Binding" type="tns:E2G_OE_getTimesheetStatusInfoPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="E2G_OE_getTimesheetStatusInfo">
+            <soap:operation soapAction="urn:E2G_OE_getTimesheetStatusInfo" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="E2G_OE_getTimesheetStatusInfoSoap12Binding" type="tns:E2G_OE_getTimesheetStatusInfoPortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="E2G_OE_getTimesheetStatusInfo">
+            <soap12:operation soapAction="urn:E2G_OE_getTimesheetStatusInfo" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="E2G_OE_getTimesheetStatusInfoHttpBinding" type="tns:E2G_OE_getTimesheetStatusInfoPortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="E2G_OE_getTimesheetStatusInfo">
+            <http:operation location="E2G_OE_getTimesheetStatusInfo"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="E2G_OE_getTimesheetStatusInfo">
+        <wsdl:port name="E2G_OE_getTimesheetStatusInfoHttpSoap11Endpoint" binding="tns:E2G_OE_getTimesheetStatusInfoSoap11Binding">
+            <soap:address location=""/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getTimesheetStatusInfoHttpsSoap11Endpoint" binding="tns:E2G_OE_getTimesheetStatusInfoSoap11Binding">
+            <soap:address location="https://origin-dev.au.wfs.cloud/workforce/services/E2G_OE_getTimesheetStatusInfo.E2G_OE_getTimesheetStatusInfoHttpsSoap11Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getTimesheetStatusInfoHttpSoap12Endpoint" binding="tns:E2G_OE_getTimesheetStatusInfoSoap12Binding">
+            <soap12:address location=""/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getTimesheetStatusInfoHttpsSoap12Endpoint" binding="tns:E2G_OE_getTimesheetStatusInfoSoap12Binding">
+            <soap12:address location="https://origin-dev.au.wfs.cloud/workforce/services/E2G_OE_getTimesheetStatusInfo.E2G_OE_getTimesheetStatusInfoHttpsSoap12Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getTimesheetStatusInfoHttpEndpoint" binding="tns:E2G_OE_getTimesheetStatusInfoHttpBinding">
+            <http:address location=""/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getTimesheetStatusInfoHttpsEndpoint" binding="tns:E2G_OE_getTimesheetStatusInfoHttpBinding">
+            <http:address location="https://origin-dev.au.wfs.cloud/workforce/services/E2G_OE_getTimesheetStatusInfo.E2G_OE_getTimesheetStatusInfoHttpsEndpoint/"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns="http://services.workforcesoftware.com/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:ax225="http://webservices.workforcesoftware.com/xsd" xmlns:ax221="http://ws.apache.org/axis2/xsd" xmlns:ax222="http://data.service.webservices.workforcesoftware.com/xsd" xmlns:tns="http://services.workforcesoftware.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://services.workforcesoftware.com">
+    <wsdl:documentation>E2G_getJobStatus</wsdl:documentation>
+    <wsdl:types>
+        <xs:schema xmlns:ax226="http://webservices.workforcesoftware.com/xsd" xmlns:ax223="http://data.service.webservices.workforcesoftware.com/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.apache.org/axis2/xsd">
+            <xs:import namespace="http://data.service.webservices.workforcesoftware.com/xsd"/>
+            <xs:import namespace="http://webservices.workforcesoftware.com/xsd"/>
+            <xs:complexType name="E2g_get_job_status_payload">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="includeLog" nillable="true" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="jobId" nillable="true" type="ax223:WSGeneratedId"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="E2G_getJobStatusResult">
+                <xs:complexContent>
+                    <xs:extension base="ax225:WSResultObjectBase">
+                        <xs:sequence>
+                            <xs:element minOccurs="0" name="result" nillable="true" type="ax221:E2g_get_job_status_response"/>
+                        </xs:sequence>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+            <xs:complexType name="E2g_get_job_status_response">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="completedTasks" nillable="true" type="xs:int"/>
+                    <xs:element minOccurs="0" name="description" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="endTime" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="errorCount" nillable="true" type="xs:int"/>
+                    <xs:element minOccurs="0" name="log" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="messages" nillable="true" type="xs:int"/>
+                    <xs:element minOccurs="0" name="startTime" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="status" nillable="true" type="ax221:Batch_job_statusChoice"/>
+                    <xs:element minOccurs="0" name="totalTasks" nillable="true" type="xs:int"/>
+                    <xs:element minOccurs="0" name="warningCount" nillable="true" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="Batch_job_statusChoice">
+                <xs:complexContent>
+                    <xs:extension base="ax223:WSChoiceBase">
+                        <xs:sequence>
+                            <xs:element minOccurs="0" name="batch_job_status" nillable="true" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://data.service.webservices.workforcesoftware.com/xsd">
+            <xs:complexType name="WSGeneratedId">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="id" type="xs:long"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="WSChoiceBase">
+                <xs:sequence/>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservices.workforcesoftware.com/xsd">
+            <xs:complexType name="WSResultObjectBase">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="detailedErrorMessage" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="operationSuccessful" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="resultCode" type="xs:int"/>
+                    <xs:element minOccurs="0" name="resultDescription" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ax224="http://ws.apache.org/axis2/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.workforcesoftware.com/xsd">
+            <xs:import namespace="http://ws.apache.org/axis2/xsd"/>
+            <xs:element name="E2G_getJobStatus">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="payload" nillable="true" type="ax224:E2g_get_job_status_payload"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="E2G_getJobStatusResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax224:E2G_getJobStatusResult"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="E2G_getJobStatusRequest">
+        <wsdl:part name="parameters" element="ns:E2G_getJobStatus"/>
+    </wsdl:message>
+    <wsdl:message name="E2G_getJobStatusResponse">
+        <wsdl:part name="parameters" element="ns:E2G_getJobStatusResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="E2G_getJobStatusPortType">
+        <wsdl:operation name="E2G_getJobStatus">
+            <wsdl:input message="tns:E2G_getJobStatusRequest" wsaw:Action="urn:E2G_getJobStatus"/>
+            <wsdl:output message="tns:E2G_getJobStatusResponse" wsaw:Action="urn:E2G_getJobStatusResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="E2G_getJobStatusSoap11Binding" type="tns:E2G_getJobStatusPortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="E2G_getJobStatus">
+            <soap:operation soapAction="urn:E2G_getJobStatus" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="E2G_getJobStatusSoap12Binding" type="tns:E2G_getJobStatusPortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="E2G_getJobStatus">
+            <soap12:operation soapAction="urn:E2G_getJobStatus" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="E2G_getJobStatusHttpBinding" type="tns:E2G_getJobStatusPortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="E2G_getJobStatus">
+            <http:operation location="E2G_getJobStatus"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="E2G_getJobStatus">
+        <wsdl:port name="E2G_getJobStatusHttpsSoap11Endpoint" binding="tns:E2G_getJobStatusSoap11Binding">
+            <soap:address location="https://origin-dev.au.wfs.cloud/workforce/services/E2G_getJobStatus.E2G_getJobStatusHttpsSoap11Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="E2G_getJobStatusHttpSoap11Endpoint" binding="tns:E2G_getJobStatusSoap11Binding">
+            <soap:address location=""/>
+        </wsdl:port>
+        <wsdl:port name="E2G_getJobStatusHttpSoap12Endpoint" binding="tns:E2G_getJobStatusSoap12Binding">
+            <soap12:address location=""/>
+        </wsdl:port>
+        <wsdl:port name="E2G_getJobStatusHttpsSoap12Endpoint" binding="tns:E2G_getJobStatusSoap12Binding">
+            <soap12:address location="https://origin-dev.au.wfs.cloud/workforce/services/E2G_getJobStatus.E2G_getJobStatusHttpsSoap12Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="E2G_getJobStatusHttpsEndpoint" binding="tns:E2G_getJobStatusHttpBinding">
+            <http:address location="https://origin-dev.au.wfs.cloud/workforce/services/E2G_getJobStatus.E2G_getJobStatusHttpsEndpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="E2G_getJobStatusHttpEndpoint" binding="tns:E2G_getJobStatusHttpBinding">
+            <http:address location=""/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
