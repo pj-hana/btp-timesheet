@@ -1,19 +1,20 @@
+
 import cds from '@sap/cds';
+import {
+    getLoginUserInfo,
+    getTimesheet,
+    LoginUserInfo
+} from "#cds-models/com/origin/timesheet/TimesheetService";
 const { SELECT } = cds.ql;
 
 
-interface LoginUserInfo {
-  userId: string;
-  givenName: string;
-  familyName:string;
-  persona:'WFS_CATS'|'CATS'
-}
+
 
 export default class TimesheetService extends cds.ApplicationService {
   async init(): Promise<void> {
-    this.on('getLoginUserInfo', this.getLoginUserInfo);
+    this.on(getLoginUserInfo, this.getLoginUserInfo);
 
-    this.on("getTimesheet", this.getTimesheet);
+    this.on(getTimesheet, this.getTimesheet);
 
     await super.init();
   }
@@ -36,35 +37,21 @@ export default class TimesheetService extends cds.ApplicationService {
     }
 
      private formatDate(date:Date){
-
         return date
-
             .toISOString()
-
             .substring(0,10);
-
     }
 
      private displayDate(dateString:string){
-
         return new Intl.DateTimeFormat(
-
             "en-AU",
-
             {
-
                 day:"numeric",
-
                 month:"long",
-
                 year:"numeric",
-
                 timeZone:"UTC"
-
             }
-
         ).format(
-
             new Date(dateString)
 
         );
@@ -72,115 +59,61 @@ export default class TimesheetService extends cds.ApplicationService {
     }
 
 
-   private getTimesheet = async (req:any) => {
-
+    private getTimesheet = async (req: cds.Request) => {
         const period = String(req.data.period ?? "");
 
         this.validatePeriod(period);
 
-      const user = this.getLoginUserInfo(req);
+        const user = this.getLoginUserInfo(req);
 
-        const startDate = new Date(period + "T00:00:00Z");
-
+        const startDate = new Date(`${period}T00:00:00Z`);
         const endDate = new Date(startDate);
 
         if (user.persona === "CATS") {
-
-            // Monday-Sunday
-
             endDate.setUTCDate(startDate.getUTCDate() + 6);
-
         } else {
-
-            // Monday week1 -> Sunday week2
-
             endDate.setUTCDate(startDate.getUTCDate() + 13);
-
         }
 
         const start = this.formatDate(startDate);
-
         const end = this.formatDate(endDate);
 
-  
-
-        const { TIMESHEET } = cds.entities("timesheet.db");
+        const { Timesheets } = this.entities;
 
         const result = await SELECT.one
-            .from(TIMESHEET)
-            .columns(c => {
-
+            .from(Timesheets)
+            .columns((c: any) => {
                 c("*");
-
-                c.entries(e => {
-
+                c.entries((e: any) => {
                     e("*");
-
                 });
-
             })
             .where({
-
                 employeeId: user.userId,
-
                 startDate: start,
-
                 endDate: end
-
             });
 
         return {
-
             timesheetId: result?.ID ?? null,
-
             employeeName: user.givenName,
-
             employeeNumber: user.userId,
-
-            persona:user.persona,
-
+            persona: user.persona,
             periodStart: start,
-
             periodEnd: end,
-
             periodDisplay:
-
-                this.displayDate(start) +
-
-                " - " +
-
-                this.displayDate(end),
-
+                `${this.displayDate(start)} - ${this.displayDate(end)}`,
             wfsStatus:
-
-                result?.wfsSubmissionStatus ??
-
-                "NEW",
-
+                result?.wfsSubmissionStatus ?? "NEW",
             confirmationStatus:
-
-                result?.confirmationStatus ??
-
-                "NEW",
-
+                result?.confirmationStatus ?? "NEW",
             wfsSubmissionStatus:
-
-                result?.wfsSubmissionStatus ??
-
-                "NOT_SUBMITTED",
-
+                result?.wfsSubmissionStatus ?? "NOT_SUBMITTED",
             sapSubmissionStatus:
-
-                result?.sapSubmissionStatus ??
-
-                "NOT_SUBMITTED",
-
+                result?.sapSubmissionStatus ?? "NOT_SUBMITTED",
             entries:
-
                 result?.entries ?? []
-
         };
-
     };
 
     private validatePeriod(period: string): void {

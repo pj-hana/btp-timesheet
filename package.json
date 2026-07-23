@@ -12,18 +12,14 @@
     "@cap-js/cds-test": "^1.0.1",
     "@cap-js/cds-typer": "^0.40",
     "@cap-js/cds-types": "^0.18",
-    "@cap-js/cds-typer": ">=0.1",
-    "@cap-js/cds-types": "^0.16.0",
     "@cap-js/sqlite": "^2.4",
     "@sap/cds-dk": "^10",
     "@types/jest": "^30.0.0",
     "@types/node": "^22.0.0",
-    "@types/node": "^24.0.0",
     "cds-plugin-ui5": "^0.17.0",
     "chai": "^6.2.2",
     "chai-as-promised": "^8.0.2",
     "jest": "^30.4.2",
-    "mbt": "^1.2.49",
     "mbt": "^1.2.49",
     "rimraf": "^5.0.5",
     "ts-jest": "^29.4.11",
@@ -31,7 +27,8 @@
     "typescript": "^5"
   },
   "scripts": {
-    "start": "cds-tsx serve",
+    "start": "cds-serve",
+    "start-local": "cds-tsx serve",
     "watch": "cds-tsx w",
     "watch-timesheet-ui": "cds watch --open com.origin.timesheet.timesheetui/index.html?sap-ui-xx-viewCache=false --livereload false",
     "undeploy": "cf undeploy timesheet --delete-services --delete-service-keys --delete-service-brokers",
@@ -78,8 +75,5 @@
   },
   "workspaces": [
     "app/*"
-  ],
-  "imports": {
-    "#cds-models/*": "./@cds-models/*/index.js"
-  }
+  ]
 }
