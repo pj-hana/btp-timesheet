@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ax2157="http://ws.apache.org/axis2/xsd" xmlns:ax2158="http://data.service.webservices.workforcesoftware.com/xsd" xmlns:ns="http://services.workforcesoftware.com/xsd" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:ax2161="http://webservices.workforcesoftware.com/xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns1="http://org.apache.axis2/xsd" xmlns:tns="http://services.workforcesoftware.com" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://services.workforcesoftware.com">
+    <wsdl:documentation>E2G_OE_getEmployeeSchedule</wsdl:documentation>
+    <wsdl:types>
+        <xs:schema xmlns:ax2159="http://data.service.webservices.workforcesoftware.com/xsd" xmlns:ax2162="http://webservices.workforcesoftware.com/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ws.apache.org/axis2/xsd">
+            <xs:import namespace="http://data.service.webservices.workforcesoftware.com/xsd"/>
+            <xs:import namespace="http://webservices.workforcesoftware.com/xsd"/>
+            <xs:complexType name="E2g_oe_get_employee_schedule_request">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="dateRange" nillable="true" type="ax2157:E2g_date_range"/>
+                    <xs:element minOccurs="0" name="employeeId" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="payCodeSet" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="version" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="E2g_date_range">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="endDate" nillable="true" type="ax2158:WSDate"/>
+                    <xs:element minOccurs="0" name="startDate" nillable="true" type="ax2158:WSDate"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="E2G_OE_getEmployeeScheduleResult">
+                <xs:complexContent>
+                    <xs:extension base="ax2161:WSResultObjectBase">
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" name="result" nillable="true" type="ax2157:E2g_oe_employee_schedule_line"/>
+                        </xs:sequence>
+                    </xs:extension>
+                </xs:complexContent>
+            </xs:complexType>
+            <xs:complexType name="E2g_oe_employee_schedule_line">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="detailRecordId" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="employeePeriodVersion" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="endDateTime" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="hours" nillable="true" type="xs:double"/>
+                    <xs:element minOccurs="0" name="isPublicHoliday" nillable="true" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="payCode" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="phDescription" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="startDateTime" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="workDate" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://data.service.webservices.workforcesoftware.com/xsd">
+            <xs:complexType name="WSDate">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="day" type="xs:int"/>
+                    <xs:element minOccurs="0" name="month" type="xs:int"/>
+                    <xs:element minOccurs="0" name="year" type="xs:int"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://webservices.workforcesoftware.com/xsd">
+            <xs:complexType name="WSResultObjectBase">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="detailedErrorMessage" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="operationSuccessful" type="xs:boolean"/>
+                    <xs:element minOccurs="0" name="resultCode" type="xs:int"/>
+                    <xs:element minOccurs="0" name="resultDescription" nillable="true" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+        </xs:schema>
+        <xs:schema xmlns:ax2160="http://ws.apache.org/axis2/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://services.workforcesoftware.com/xsd">
+            <xs:import namespace="http://ws.apache.org/axis2/xsd"/>
+            <xs:element name="E2G_OE_getEmployeeSchedule">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="request" nillable="true" type="ax2157:E2g_oe_get_employee_schedule_request"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="E2G_OE_getEmployeeScheduleResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="0" name="return" nillable="true" type="ax2157:E2G_OE_getEmployeeScheduleResult"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="E2G_OE_getEmployeeScheduleRequest">
+        <wsdl:part name="parameters" element="ns:E2G_OE_getEmployeeSchedule"/>
+    </wsdl:message>
+    <wsdl:message name="E2G_OE_getEmployeeScheduleResponse">
+        <wsdl:part name="parameters" element="ns:E2G_OE_getEmployeeScheduleResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="E2G_OE_getEmployeeSchedulePortType">
+        <wsdl:operation name="E2G_OE_getEmployeeSchedule">
+            <wsdl:input message="tns:E2G_OE_getEmployeeScheduleRequest" wsaw:Action="urn:E2G_OE_getEmployeeSchedule"/>
+            <wsdl:output message="tns:E2G_OE_getEmployeeScheduleResponse" wsaw:Action="urn:E2G_OE_getEmployeeScheduleResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="E2G_OE_getEmployeeScheduleSoap11Binding" type="tns:E2G_OE_getEmployeeSchedulePortType">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="E2G_OE_getEmployeeSchedule">
+            <soap:operation soapAction="urn:E2G_OE_getEmployeeSchedule" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="E2G_OE_getEmployeeScheduleSoap12Binding" type="tns:E2G_OE_getEmployeeSchedulePortType">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="E2G_OE_getEmployeeSchedule">
+            <soap12:operation soapAction="urn:E2G_OE_getEmployeeSchedule" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="E2G_OE_getEmployeeScheduleHttpBinding" type="tns:E2G_OE_getEmployeeSchedulePortType">
+        <http:binding verb="POST"/>
+        <wsdl:operation name="E2G_OE_getEmployeeSchedule">
+            <http:operation location="E2G_OE_getEmployeeSchedule"/>
+            <wsdl:input>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:input>
+            <wsdl:output>
+                <mime:content type="application/xml" part="parameters"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="E2G_OE_getEmployeeSchedule">
+        <wsdl:port name="E2G_OE_getEmployeeScheduleHttpSoap11Endpoint" binding="tns:E2G_OE_getEmployeeScheduleSoap11Binding">
+            <soap:address location=""/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getEmployeeScheduleHttpsSoap11Endpoint" binding="tns:E2G_OE_getEmployeeScheduleSoap11Binding">
+            <soap:address location="https://origin-dev.au.wfs.cloud/workforce/services/E2G_OE_getEmployeeSchedule.E2G_OE_getEmployeeScheduleHttpsSoap11Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getEmployeeScheduleHttpsSoap12Endpoint" binding="tns:E2G_OE_getEmployeeScheduleSoap12Binding">
+            <soap12:address location="https://origin-dev.au.wfs.cloud/workforce/services/E2G_OE_getEmployeeSchedule.E2G_OE_getEmployeeScheduleHttpsSoap12Endpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getEmployeeScheduleHttpSoap12Endpoint" binding="tns:E2G_OE_getEmployeeScheduleSoap12Binding">
+            <soap12:address location=""/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getEmployeeScheduleHttpsEndpoint" binding="tns:E2G_OE_getEmployeeScheduleHttpBinding">
+            <http:address location="https://origin-dev.au.wfs.cloud/workforce/services/E2G_OE_getEmployeeSchedule.E2G_OE_getEmployeeScheduleHttpsEndpoint/"/>
+        </wsdl:port>
+        <wsdl:port name="E2G_OE_getEmployeeScheduleHttpEndpoint" binding="tns:E2G_OE_getEmployeeScheduleHttpBinding">
+            <http:address location=""/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

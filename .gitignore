@@ -8,6 +8,7 @@ default-*.json
 *.sqlite
 comorigintimesheetui.zip
 *.tar
+.env
 
 # MTA
 mta_archives/
@@ -16,6 +17,8 @@ mta_archives/
 
 # Other
 .DS_Store
+*.orig
+*.log
 
 # @cap-js/cds-typer
 @cds-models
