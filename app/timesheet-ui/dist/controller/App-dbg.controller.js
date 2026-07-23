@@ -36,6 +36,31 @@ sap.ui.define([
             } catch (oError) {
                 console.error("Failed to get login user info:", oError);
             }
+        },
+         onLoadTimesheet: async function () {
+
+            const oModel = this.getOwnerComponent().getModel();
+
+            const oBinding = oModel.bindContext(
+                "/getTimesheet(period=2026-07-13)"
+            );
+
+            try {
+
+                await oBinding.execute();
+
+                const oResult = oBinding.getBoundContext().getObject();
+
+                console.log("Timesheet:");
+
+                console.log(oResult);
+
+            } catch (oError) {
+
+                console.error(oError);
+
+            }
+
         }
     });
 });

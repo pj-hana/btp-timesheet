@@ -102,34 +102,6 @@
 				}
 			]
 		},
-		"routing": {
-			"config": {
-				"routerClass": "sap.m.routing.Router",
-				"controlAggregation": "pages",
-				"controlId": "app",
-				"transition": "slide",
-				"type": "View",
-				"viewType": "XML",
-				"path": "com.origin.timesheet.ui.view",
-				"async": true,
-				"viewPath": "com.origin.timesheet.ui.view"
-			},
-			"routes": [
-				{
-					"name": "RouteApp",
-					"pattern": ":?query:",
-					"target": [
-						"TargetApp"
-					]
-				}
-			],
-			"targets": {
-				"TargetApp": {
-					"id": "App",
-					"name": "App"
-				}
-			}
-		},
 		"rootView": {
 			"viewName": "com.origin.timesheet.ui.view.App",
 			"type": "XML",

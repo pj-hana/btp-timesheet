@@ -1,7 +1,21 @@
 <mvc:View controllerName="com.origin.timesheet.ui.controller.App"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{= ${i18n>title} + ' - ' + ${UIModel>/givenName} }">
-      
-    </Page>
+    xmlns="sap.m" displayBlock="true">
+    <App id="app">
+        <pages>
+            <Page id="page" title="{= ${i18n>title} + ' - ' + ${UIModel>/givenName}}" showNavButton="true">
+                <content>
+                    <VBox  id="contetn"
+                                width="100%"
+                                class="sapUiSmallMargin">
+                                <Button
+                                    id="loadTimesheetButton"
+                                    text="Load Timesheet"
+                                    type="Emphasized"
+                                    press=".onLoadTimesheet" />
+                    </VBox>
+                </content>
+            </Page>
+        </pages>
+    </App>
 </mvc:View>

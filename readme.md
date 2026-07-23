@@ -47,3 +47,5 @@ in app/roouter/xs-app.json change to this
     }
   ]
 }
+
+then run this cf update-service timesheet-auth -c xs-security.json
